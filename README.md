@@ -23,7 +23,8 @@
 
 <!-- About the Project -->
 ## :star2: About the Project
-fragment of the online store where we can add products to the basket, delete, we have random promotions that are taken into account when adding to the basket as well as division into categories and searching for a given product
+fragment of the loading page, a kind of beauty, made for a recruitment task,
+the project was made in react js in the vite environment
 
 <!-- Screenshots -->
 ### :camera: Screenshots
