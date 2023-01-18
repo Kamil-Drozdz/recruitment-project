@@ -5,10 +5,12 @@
 }
 .slideshow-container.black {
 	color: black;
+	background-color: white;
 }
 
 .slideshow-container.white {
 	color: white;
+	background-color: black;
 }
 
 .slideshow-image {
@@ -50,4 +52,12 @@
 	border: 2px solid inherit;
 	font-size: 2.2rem;
 	cursor: pointer;
+}
+@media (max-width: 1024px) {
+	.slide-text {
+		font-size: 2rem;
+	}
+	.slideshow-controls button {
+		font-size: 1.5rem;
+	}
 }

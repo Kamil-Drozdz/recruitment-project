@@ -25,9 +25,9 @@ function Dropdown() {
 			{open && (
 				<div className='dropdown-options'>
 					{options.map((option, index) => (
-						<div key={index} className='dropdown-option' onClick={() => handleSelect(option)}>
+						<a key={index} className='dropdown-option' onClick={() => handleSelect(option)}>
 							{option}
-						</div>
+						</a>
 					))}
 				</div>
 			)}

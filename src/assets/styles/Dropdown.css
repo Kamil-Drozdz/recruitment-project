@@ -16,16 +16,30 @@
 	top: 100%;
 	left: 0;
 	width: 100%;
-	background-color: gray;
-	border-radius: 8px;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-option {
+	background-color: gray;
 	padding: 12px;
 	cursor: pointer;
 }
 .dropdown-option:hover {
+	color: wheat;
 	background-color: black;
-	border-radius: 8px;
+}
+@media (max-width: 1024px) {
+	.dropdown-option {
+		width: 80%;
+	}
+
+	.dropdown-options {
+		top: 20px;
+		left: 95%;
+	}
+
+	.dropdown-container a {
+		flex-direction: column;
+		display: flex;
+	}
 }

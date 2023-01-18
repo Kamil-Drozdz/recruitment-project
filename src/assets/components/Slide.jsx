@@ -7,14 +7,21 @@ import image4 from '../../assets/images/image4.jpg';
 import image5 from '../../assets/images/image5.jpg';
 
 function Slide() {
-	const images = [image1, image2, image3, image4, image5];
-	const descriptions = ['Keune Blend', 'Keune Design', 'Keune Care', 'Keune Sopure', 'Keune Koloryzacja'];
+	const images = [image2, image1, , image3, image5, image4];
+	const descriptions = [
+		'Keune Blend',
+		'Keune Design',
+		'Keune Care',
+		'Keune Sopure',
+		'Keune Koloryzacja',
+		'Keune Marki',
+	];
 	const links = ['keune-blend', 'keune-design', 'keune-care', 'keune-sopure', 'keune-koloryzacja', 'keune-marki'];
 
 	return (
 		<div className='slide-grid-container'>
 			{images.map((image, index) => (
-				<div key={index} className={index === 0 || index === 2 || index === 3 ? 'two-cells' : 'one-cell'}>
+				<div key={index} className={` ${index % 2 === 1 ? 'two-cells' : ''}`}>
 					<img src={image} alt='Slide' className='slide-grid-image'></img>
 					<p className='slide-grid-text-descriptions'> {descriptions[index]}</p>
 					<a href={links[index]} className='slide-grid-text'>
