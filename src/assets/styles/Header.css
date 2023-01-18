@@ -1,0 +1,26 @@
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+}
+
+.logo {
+	margin-left: 20px;
+	font-size: 44px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.menu-container {
+	display: flex;
+	align-items: center;
+}
+.menu-container a {
+	color: inherit;
+	display: absolute;
+	text-decoration: none;
+	margin-right: 60px;
+	font-size: 1.5rem;
+}
