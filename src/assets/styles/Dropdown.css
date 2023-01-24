@@ -16,7 +16,6 @@
 	top: 100%;
 	left: 0;
 	width: 100%;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-option {
@@ -41,5 +40,12 @@
 	.dropdown-container a {
 		flex-direction: column;
 		display: flex;
+	}
+}
+@media (max-width: 500px) {
+	.dropdown-selected {
+		margin-left: 20px;
+		font-size: 1rem;
+		padding: 0;
 	}
 }

@@ -22,7 +22,7 @@ function Slide() {
 		<div className='slide-grid-container'>
 			{images.map((image, index) => (
 				<div key={index} className={` ${index % 2 === 1 ? 'two-cells' : ''}`}>
-					<img src={image} alt='Slide' className='slide-grid-image'></img>
+					<img src={image} loading='eager' alt='Slide' className='slide-grid-image'></img>
 					<p className='slide-grid-text-descriptions'> {descriptions[index]}</p>
 					<a href={links[index]} className='slide-grid-text'>
 						odkryj serie!

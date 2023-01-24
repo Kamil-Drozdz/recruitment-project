@@ -27,7 +27,7 @@ function Slideshow() {
 			<Header />
 			<CSSTransition key={currentSlide} timeout={{ enter: 500, exit: 300 }} classNames='fade'>
 				<div>
-					<img src={slides[currentSlide]} alt='Slide' className='slideshow-image' />
+					<img src={slides[currentSlide]} loading='lazy' alt='Slide' className='slideshow-image' />
 					<div className={`slide-text ${currentColor}`}>
 						{currentSlide === 0 ? 'Bez kompromisu Keune design' : 'Takie jak lubisz Keune koloryzacja'}
 					</div>
